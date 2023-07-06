@@ -1,0 +1,31 @@
+.main__partners {
+	background-color: $medium;
+	display: flex;
+	justify-content: center;
+	padding: 100px;
+}
+
+.main__partners-block {
+	@media screen and (max-width: $desktop) and (min-width: $tablet1) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		justify-content: center;
+        margin: -80px;
+        width: 600px;
+	}
+	@media screen and (max-width: $tablet1) and (min-width: $tablet2) {
+		display: flex;
+		flex-wrap: wrap;
+        width: 300px;
+	}
+	@media screen and (max-width: $tablet2) {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 1fr);
+	}
+}
+
+.main__partners-img {
+	margin: 10px;
+}

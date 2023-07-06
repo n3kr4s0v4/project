@@ -1,0 +1,49 @@
+.logo__menu {
+	list-style: none;
+	display: flex;
+	grid-area: lm;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu {
+	grid-area: mn;
+	align-items: center;
+}
+
+.header__img {
+	grid-area: headimg;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#burger {
+	grid-area: burger;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas: "headimg headimg mn mn lm";
+
+	@media screen and (max-width: $tablet1) and (min-width: $tablet2) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas: "headimg lm"
+							"mn mn";
+	}
+	@media screen and (max-width: $tablet2) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas: "headimg lm"
+							"mn mn";
+	}
+
+	@media screen and (max-width: $mobile) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas: "headimg headimg"
+							"burger lm";
+	}
+}
