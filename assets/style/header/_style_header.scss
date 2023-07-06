@@ -16,6 +16,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-right: 50px;
 }
 
 #burger {
@@ -39,12 +40,5 @@
 		grid-template-rows: repeat(2, 1fr);
 		grid-template-areas: "headimg lm"
 							"mn mn";
-	}
-
-	@media screen and (max-width: $mobile) {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-areas: "headimg headimg"
-							"burger lm";
 	}
 }

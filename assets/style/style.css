@@ -46,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 50px;
 }
 
 #burger {
@@ -72,13 +73,6 @@
     grid-template-areas: "headimg lm" "mn mn";
   }
 }
-@media screen and (max-width: 320px) {
-  .header {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "headimg headimg" "burger lm";
-  }
-}
 
 @media screen and (max-width: 578px) {
   nav {
@@ -102,9 +96,17 @@ nav ul {
 @media screen and (max-width: 923px) and (min-width: 768px) {
   nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 578px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
   }
 }
 nav ul li {

@@ -18,10 +18,17 @@ nav ul {
   }
   @media screen and (max-width: $tabletaddition) and (min-width: $tablet1) {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
-    padding-top: 35px;
+    padding-bottom: 35px;
 	}
+
+  @media screen and (max-width: $tablet1) and (min-width: $tablet2) {
+    display: flex;
+		justify-content: space-between;
+		align-items: center;
+    padding-bottom: 15px;
+  }
 
   li {
     display: inline-block;
