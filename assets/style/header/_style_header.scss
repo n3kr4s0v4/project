@@ -26,6 +26,7 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-areas: "headimg headimg mn mn lm";
+	height: 100px;
 
 	@media screen and (max-width: $tablet1) and (min-width: $tablet2) {
 		grid-template-columns: repeat(2, 1fr);

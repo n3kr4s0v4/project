@@ -9,6 +9,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-around;
+  padding-top: 35px;
 
   @media screen and (max-width: $tablet2) {
     display: block;
@@ -19,7 +20,7 @@ nav ul {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding: 10px;
+    padding-top: 35px;
 	}
 
   li {
