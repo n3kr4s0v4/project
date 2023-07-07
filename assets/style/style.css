@@ -35,7 +35,11 @@
   justify-content: center;
   align-items: center;
 }
-
+@media screen and (max-width: 768px) and (min-width: 578px) {
+  .logo__menu {
+    padding-right: 50px;
+  }
+}
 .menu {
   grid-area: mn;
   align-items: center;
@@ -47,6 +51,16 @@
   justify-content: center;
   align-items: center;
   padding-right: 50px;
+}
+@media screen and (max-width: 768px) and (min-width: 578px) {
+  .header__img {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .header__img {
+    padding-left: 50px;
+  }
 }
 
 #burger {
@@ -93,14 +107,7 @@ nav ul {
     padding: 22px 0 88px 15px;
   }
 }
-@media screen and (max-width: 923px) and (min-width: 768px) {
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 35px;
-  }
-}
+
 @media screen and (max-width: 768px) and (min-width: 578px) {
   nav ul {
     display: flex;
@@ -172,6 +179,220 @@ nav ul a {
     }
   }
 }
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
+.title {
+  color: #666666;
+  font-family: "Roboto";
+  line-height: 100%;
+}
+
+.text {
+  color: #85859B;
+  font-family: "Roboto";
+  line-height: 170%;
+}
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+.main__simplethings {
+  display: flex;
+  justify-content: center;
+  min-width: 1110px;
+  height: 620px;
+}
+@media screen and (max-width: 768px) {
+  .main__simplethings {
+    min-width: 690px;
+    height: 470px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .main__simplethings {
+    min-width: 511px;
+    height: 416px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main__simplethings {
+    min-width: 289px;
+    height: 328px;
+  }
+}
+
+.simplethings__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .simplethings__container {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .simplethings__container {
+    width: 511px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .simplethings__container {
+    width: 289px;
+  }
+}
+
+.simplethings__content {
+  width: 445px;
+  height: 360px;
+}
+@media screen and (max-width: 768px) {
+  .simplethings__content {
+    width: 390px;
+    height: 340px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .simplethings__content {
+    width: 287px;
+    height: 296px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .simplethings__content {
+    width: 289px;
+    height: 230px;
+  }
+}
+
+.simplethings__title {
+  font-family: "Roboto";
+  color: #4C5866;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .simplethings__title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .simplethings__title {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .simplethings__title {
+    font-size: 30px;
+  }
+}
+
+.simplethings__text {
+  margin: 30px 0px;
+  line-height: 150%;
+  font-size: 18px;
+}
+@media screen and (max-width: 578px) {
+  .simplethings__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .simplethings__text {
+    font-size: 14px;
+  }
+}
+
+.button {
+  display: flex;
+  width: 255px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #7875FE;
+}
+@media screen and (max-width: 578px) {
+  .button {
+    width: 196px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .button {
+    width: 144px;
+    height: 50px;
+  }
+}
+
+.simplethings__button-text {
+  padding: 20px 50px;
+  font-family: Roboto;
+  font-size: 20px;
+  text-decoration: none;
+  color: #7875FE;
+}
+@media screen and (max-width: 320px) {
+  .simplethings__button-text {
+    font-size: 18px;
+  }
+}
+
+.button:hover {
+  background-color: #7875FE;
+}
+
+.simplethings__button-text:hover {
+  color: #FFFFFF;
+  background-color: #7875FE;
+}
+
+.simplethings__picture {
+  width: 540px;
+  height: 560px;
+  border: none;
+  margin-top: 60px;
+  background-image: url(/assets/img/main__simplethings/paperroll-desktop.png);
+}
+@media screen and (max-width: 768px) {
+  .simplethings__picture {
+    width: 270px;
+    height: 339px;
+    margin-top: 130px;
+    background-image: url(/assets/img/main__simplethings/paperroll-tablet690.png);
+  }
+}
+@media screen and (max-width: 578px) {
+  .simplethings__picture {
+    width: 195px;
+    height: 396px;
+    margin-bottom: 110px;
+    background-image: url(/assets/img/main__simplethings/paperroll-tablet510.png);
+  }
+}
+@media screen and (max-width: 320px) {
+  .simplethings__picture {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
@@ -425,7 +646,7 @@ nav ul a {
   justify-content: center;
   margin: 90px auto;
 }
-@media screen and (max-width: 1440px) and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .main__products {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -437,7 +658,7 @@ nav ul a {
     padding: 0 39px;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 578px) {
+@media screen and (max-width: 578px) {
   .main__products {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -448,7 +669,7 @@ nav ul a {
     padding: 0 33px;
   }
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 320px) {
   .main__products {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -466,7 +687,7 @@ nav ul a {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 1440px) and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .card {
     width: 330px;
     height: 434px;
@@ -474,7 +695,7 @@ nav ul a {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 578px) {
+@media screen and (max-width: 578px) {
   .card {
     width: 240px;
     height: 434px;
@@ -482,7 +703,7 @@ nav ul a {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 320px) {
   .card {
     width: 290px;
     height: 407px;
@@ -495,21 +716,21 @@ nav ul a {
   width: 255px;
   height: 180px;
   -o-object-fit: cover;
-     object-fit: cover;
+    object-fit: cover;
 }
-@media screen and (max-width: 1440px) and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .card .card__img {
     width: 330px;
     height: 180px;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 578px) {
+@media screen and (max-width: 578px) {
   .card .card__img {
     width: 240px;
     height: 180px;
   }
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 320px) {
   .card .card__img {
     width: 290px;
     height: 180px;
@@ -520,12 +741,12 @@ nav ul a {
   margin-top: 20px;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 1440px) and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .card .card__title {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 578px) {
   .card .card__title {
     font-size: 24px;
   }
@@ -537,7 +758,7 @@ nav ul a {
   margin-bottom: 8px;
   margin-top: 8px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 578px) {
   .card .card__subtitle {
     font-size: 14px;
     margin-top: 4px;
@@ -555,7 +776,7 @@ nav ul a {
   padding: 0;
   margin-top: 20px;
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 320px) {
   .card .card__more {
     margin-top: 30px;
   }
