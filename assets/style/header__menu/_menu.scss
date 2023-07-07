@@ -1,6 +1,6 @@
 
 nav {
-  @media screen and (max-width: $tablet2) {
+  @media screen and (max-width: $mobile) {
     background-color: $medium;
     display: none;
   }
@@ -10,17 +10,16 @@ nav ul {
   display: flex;
   justify-content: space-around;
   padding-top: 35px;
-  @media screen and (max-width: $tablet2) {
-    display: block;
+  @media screen and (max-width: $tablet1) {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
     list-style-type: none;
-    padding: 22px 0 88px 15px;
   }
 
-
-  @media screen and (max-width: $tablet1) and (min-width: $tablet2) {
+  @media screen and (max-width: $tablet2) {
     display: flex;
-		justify-content: space-between;
-		align-items: center;
+		justify-content: space-around;
     padding-bottom: 15px;
   }
 
@@ -46,7 +45,7 @@ nav ul {
 }
 
 [for="burger"] {
-  @media screen and (max-width: $tablet2) {
+  @media screen and (max-width: $mobile) {
     display: block;
     width: 30px;
     text-align: center;
@@ -56,26 +55,26 @@ nav ul {
 }
 
 [for="burger"]::before {
-  @media screen and (max-width: $tablet2) {
+  @media screen and (max-width: $mobile) {
     content: url(../img/header_menu/List.svg);
   }
 }
 
 #burger:checked + label + nav {
-  @media screen and (max-width: $tablet2) {
+  @media screen and (max-width: $mobile) {
     display: block;
     animation: show 0.5s ease;
   }
 }
 
 #burger:checked + [for="burger"]::before {
-  @media screen and (max-width: $tablet2) {
+  @media screen and (max-width: $mobile) {
     content: url(../img/header_menu/close.svg);
   }
 }
 
 
-  @media screen and (max-width: $tablet2) {
+  @media screen and (max-width: $mobile) {
     @keyframes show {
     0% {
       opacity: 0;
