@@ -10,6 +10,7 @@
 	grid-area: lm;
 	justify-content: flex-end;
 	align-items: center;
+	gap: 30px;
 	@media screen and (max-width: $tablet1) {
 		display: flex;
 		justify-content: flex-end;
