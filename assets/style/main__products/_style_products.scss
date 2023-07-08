@@ -127,6 +127,15 @@
 		padding: 0;
 		margin-top: 20px;
 
+		&:hover, &:active {
+			color: $accent-dark;
+		}
+
+		&:focus {
+			background-color: $accent-background;
+			color: $accent;
+		}
+
 		@media screen and (max-width: $mobile) {
 			margin-top: 30px;
 		}
