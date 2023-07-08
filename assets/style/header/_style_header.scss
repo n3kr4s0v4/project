@@ -10,14 +10,14 @@
 	grid-area: lm;
 	justify-content: flex-end;
 	align-items: center;
-    @media screen and (max-width: $tablet1) {
+	@media screen and (max-width: $tablet1) {
 		display: flex;
 		justify-content: flex-end;
-    }
-    @media screen and (max-width: $tablet2) {
+	}
+	@media screen and (max-width: $tablet2) {
 		display: flex;
 		justify-content: flex-end;
-    }
+	}
 	@media screen and (max-width: $mobile) {
 		display: flex;
 		justify-content: flex-end;
@@ -34,22 +34,21 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-    @media screen and (max-width: $tablet1) {
+	@media screen and (max-width: $tablet1) {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-    }
-    @media screen and (max-width: $tablet2) {
+	}
+	@media screen and (max-width: $tablet2) {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-    }
+	}
 	@media screen and (max-width: $mobile) {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 	}
-
 }
 
 #burger {
@@ -66,15 +65,17 @@
 		width: 1110px;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		grid-template-areas: "headimg lm"
-							"mn mn";
+		grid-template-areas:
+			"headimg lm"
+			"mn mn";
 	}
 	@media screen and (max-width: $tablet2) {
 		width: 764px;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		grid-template-areas: "headimg lm"
-							"mn mn";
+		grid-template-areas:
+			"headimg lm"
+			"mn mn";
 	}
 	@media screen and (max-width: $mobile) {
 		width: 567px;

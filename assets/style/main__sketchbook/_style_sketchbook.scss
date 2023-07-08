@@ -38,7 +38,7 @@
 	@media screen and (max-width: $tablet2) {
 		max-width: 510px;
 	}
-	.scetchbook-text_title {
+	.scetchbook-text__title {
 		font-size: 40px;
 		font-weight: 400;
 		margin-bottom: 8px;
@@ -52,7 +52,7 @@
 			font-size: 24px;
 		}
 	}
-	.scetchbook-text_paragraph {
+	.scetchbook-text__paragraph {
 		margin-bottom: 30px;
 		width: 350px;
 		@media screen and (max-width: $tablet2) {
@@ -83,7 +83,7 @@
 }
 
 .scetchbook-text__button:hover {
-    background-color: $accent;
+	background-color: $accent;
 	color: #ffffff;
 }
 

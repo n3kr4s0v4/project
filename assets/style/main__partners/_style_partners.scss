@@ -11,14 +11,13 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		justify-content: center;
-        margin: -80px;
+		margin: -80px;
 	}
 	@media screen and (max-width: $tablet2) and (min-width: $mobile) {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 		justify-items: center;
 		width: 760px;
-
 	}
 	@media screen and (max-width: $mobile) {
 		display: grid;

@@ -1,82 +1,81 @@
 nav {
-  @media screen and (max-width: $mobile) {
-    background-color: $medium;
-    display: none;
-  }
+	@media screen and (max-width: $mobile) {
+		background-color: $medium;
+		display: none;
+	}
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 35px;
-  @media screen and (max-width: $mobile) {
-    display: block;
-    list-style-type: none;
-    padding: 22px 0 88px 15px;
-  }
+	display: flex;
+	justify-content: space-around;
+	margin-top: 35px;
+	@media screen and (max-width: $mobile) {
+		display: block;
+		list-style-type: none;
+		padding: 22px 0 88px 15px;
+	}
 
-  li {
-    display: inline-block;
+	li {
+		display: inline-block;
 
-    @media screen and (max-width: $mobile) {
-      padding-bottom: 50px;
-      display: block;
-    }
-  }
+		@media screen and (max-width: $mobile) {
+			padding-bottom: 50px;
+			display: block;
+		}
+	}
 
-  a {
-    text-decoration: none;
-    color: $dark;
+	a {
+		text-decoration: none;
+		color: $dark;
 
-    @media screen and (max-width: $mobile) {
-      font-size: 18px;
-    }
-  }
+		@media screen and (max-width: $mobile) {
+			font-size: 18px;
+		}
+	}
 }
 
 #burger,
 [for="burger"] {
-  display: none;
+	display: none;
 }
 
 [for="burger"] {
-  @media screen and (max-width: $mobile) {
-    display: block;
-    width: 30px;
-    text-align: center;
-    padding-left: 15px;
-    padding-top: 15px;
-  }
+	@media screen and (max-width: $mobile) {
+		display: block;
+		width: 30px;
+		text-align: center;
+		padding-left: 15px;
+		padding-top: 15px;
+	}
 }
 
 [for="burger"]::before {
-  @media screen and (max-width: $mobile) {
-    content: url(../img/header_menu/List.svg);
-  }
+	@media screen and (max-width: $mobile) {
+		content: url(../img/header_menu/List.svg);
+	}
 }
 
-#burger:checked+label+nav {
-  @media screen and (max-width: $mobile) {
-    display: block;
-    animation: show 0.5s ease;
-  }
+#burger:checked + label + nav {
+	@media screen and (max-width: $mobile) {
+		display: block;
+		animation: show 0.5s ease;
+	}
 }
 
-#burger:checked+[for="burger"]::before {
-  @media screen and (max-width: $mobile) {
-    content: url(../img/header_menu/close.svg);
-  }
+#burger:checked + [for="burger"]::before {
+	@media screen and (max-width: $mobile) {
+		content: url(../img/header_menu/close.svg);
+	}
 }
-
 
 @media screen and (max-width: $mobile) {
-  @keyframes show {
-    0% {
-      opacity: 0;
-    }
+	@keyframes show {
+		0% {
+			opacity: 0;
+		}
 
-    100% {
-      opacity: 1;
-    }
-  }
+		100% {
+			opacity: 1;
+		}
+	}
 }
