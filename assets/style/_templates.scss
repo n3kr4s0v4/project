@@ -1,5 +1,3 @@
-// чтобы подключить template в свой style, первой строкой в style.scss указать "@import "./templates";" без кавычек
-
 @font-face {
 	font-family: "Roboto";
 	src: url(../fonts/Roboto-Regular.ttf);
@@ -13,8 +11,8 @@
 // переменные цветов
 $line-color: #ddd;
 $accent: #7875fe;
-$accent-dark:#4946B4;
-$accent-background: #DAD9FB;
+$accent-dark: #4946b4;
+$accent-background: #dad9fb;
 $text-color: #85859b;
 $title-color: #666666;
 $logo-color: #333;
