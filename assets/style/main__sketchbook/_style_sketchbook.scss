@@ -48,9 +48,12 @@
 	}
 	.scetchbook-text__paragraph {
 		margin-bottom: 30px;
-		width: 350px;
+		min-width: 350px;
 		@media screen and (max-width: $tablet2) {
 			font-size: 16px;
+		}
+		@media screen and (max-width: $mobile) {
+			min-width: 289px;
 		}
 	}
 	.scetchbook-text__button {
@@ -83,4 +86,5 @@
 
 .sketchbook-image img {
 	width: 100%;
+	transform: translate(0, 5px);
 }

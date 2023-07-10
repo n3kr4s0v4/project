@@ -7,10 +7,11 @@
 
 .main__partners-block {
 	@media screen and (max-width: $tablet1) {
-		width: 1110px;
+		width: 690px;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		justify-content: center;
+		align-items: center;
 		margin: -80px;
 	}
 	@media screen and (max-width: $tablet2) and (min-width: $mobile) {
@@ -29,4 +30,8 @@
 
 .main__partners-img {
 	margin: 10px;
+	@media screen and (max-width: $tablet1) {
+		width: 150px;
+		height: 80px;
+	}
 }
